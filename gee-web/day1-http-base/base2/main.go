@@ -15,6 +15,7 @@ import (
 )
 
 // Engine is the uni handler for all requests
+// type Handler interface
 type Engine struct{}
 
 func (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request) {

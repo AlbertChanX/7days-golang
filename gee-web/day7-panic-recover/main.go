@@ -41,6 +41,7 @@ import (
 func main() {
 	r := gee.Default()
 	r.GET("/", func(c *gee.Context) {
+		panic("crash...")
 		c.String(http.StatusOK, "Hello Geektutu\n")
 	})
 	// index out of range for testing Recovery()

@@ -5,6 +5,11 @@ import (
 	"strings"
 )
 
+/*
+roots key eg, ['GET'] ['POST']
+handlers key eg, ['GET-/p/:lang/doc'], ['POST-/p/book']
+*/
+
 type router struct {
 	roots    map[string]*node
 	handlers map[string]HandlerFunc
